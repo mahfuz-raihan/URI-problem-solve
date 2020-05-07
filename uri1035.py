@@ -1,9 +1,13 @@
-values = list(map(int, input().strip().split()))
+values = str(input(""))
 
-if((values[1]>values[2]) & (values[3]> values[0])):
-    if((values[2]+values[3])>(values[0]+values[1])):
-        if((values[2]>0) & (values[3]>0)):
-            if(values[0]%2==0):
-                print("Valores aceitos")
+number = values.split(" ")
+A = int(number[0])
+B = int(number[1])
+C = int(number[2])
+D = int(number[3])
+
+if B > C and D > A and (C+D) > (A+B) and C > 0 and D > 0 and A % 2 == 0:
+	print("Valores aceitos");
 else:
-    print("Valores noa aceitos")
+	print("Valores nao aceitos");
+

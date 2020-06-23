@@ -7,10 +7,10 @@ count = 0
 for i in range(0, y):
     if count == y:
         break
-    line = ''
+    line = '' #declare a empty string
     for j in range(0, x):
         if count == y:
             break
         count += 1
-        line += str(count)+" "
+        line += str(count)+" " #add the count as string with blank space
     print(line[:-1])
